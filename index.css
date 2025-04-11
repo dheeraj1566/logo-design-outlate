@@ -54,10 +54,18 @@ header{
     width: 40%;
     margin: auto;
 }
-.Images_logo_Fourth img ,.Images_logo_fifth img{
+.Images_logo_Fourth img{
     width: 100%;
 
 }
 .Images_logo_fifth{
-    width: 45%;
+    width: 20%;
+    margin: auto;
 }
+.Images_logo_fifth img{
+    width: 100%;
+}
+.Images_logo_sixth{
+    width: 1%;
+}
+

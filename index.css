@@ -1,72 +1,81 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif
+    font-family: "Poppins", sans-serif;
 }
-header{
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+header {
     background-color: rgb(136, 55, 8);
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     color: #fff;
 }
-.Images_logo{
-    width: 25%;
-    height: auto;
-    margin: auto;
-}
-.Images_logo img{
-    width: 100%;
-    height: 100%;
-}
-.Images{
-    width: 45%;
-    height: auto;
-}
-.Images img{
-    width: 100%;
-    height: 100%;
-   /* border: 1px solid  rgba(128, 128, 128, 0.168);
-   border-radius: 20px; */
-   box-shadow: 5px 5px 2px rgba(128, 128, 128, 0.168);
-}
-.hero-section{
+
+.hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 5rem;
+    flex-wrap: wrap;
+    margin: 4rem auto;
+    max-width: 1200px;
+    gap: 2rem;
+    padding: 0 1rem;
 }
-/* h2{
+
+.Images_logo,
+.Images_logo_second,
+.Images_logo_third,
+.Images_logo_Fourth,
+.Images_logo_fifth,
+.Images_logo_sixth {
+    flex: 1 1 300px;
     text-align: center;
-    padding-top: 15px;
-    color: rgb(136, 55, 8);
-} */
-.Images_logo_second
- ,.Images_logo_third{
-    width: 20%;
-    margin: auto;
-}
-.Images_logo_second img ,.Images_logo_third img{
-    width: 100%;
 }
 
-.Images_logo_Fourth{
-    width: 40%;
-    margin: auto;
-}
-.Images_logo_Fourth img{
-    width: 100%;
-
-}
-.Images_logo_fifth{
-    width: 20%;
-    margin: auto;
-}
-.Images_logo_fifth img{
-    width: 100%;
-}
-.Images_logo_sixth img{
-    /* width: 500px; */
-    width: 80%;
+.Images_logo img,
+.Images_logo_second img,
+.Images_logo_third img,
+.Images_logo_Fourth img,
+.Images_logo_fifth img,
+.Images_logo_sixth img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
 }
 
+.Images {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.Images img {
+    width: 70%;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.2);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Images_logo,
+    .Images_logo_second,
+    .Images_logo_third,
+    .Images_logo_Fourth,
+    .Images_logo_fifth,
+    .Images_logo_sixth,
+    .Images {
+        width: 90%;
+    }
+}

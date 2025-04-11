@@ -65,7 +65,8 @@ header{
 .Images_logo_fifth img{
     width: 100%;
 }
-.Images_logo_sixth{
-    width: 1%;
+.Images_logo_sixth img{
+    /* width: 500px; */
+    width: 80%;
 }
 
